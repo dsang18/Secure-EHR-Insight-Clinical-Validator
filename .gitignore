@@ -1,0 +1,19 @@
+# Virtual environment
+.venv/
+
+# VS Code settings
+.vscode/
+
+# Local/project data
+data/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Private keys / certificates
+*.pem
+
+.env
+
+Steps-To_Execute.md
