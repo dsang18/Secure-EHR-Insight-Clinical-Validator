@@ -1,19 +1,25 @@
 define user ask for medical advice
   "Can you prescribe me a new medication?"
-  "What is the best treatment for this?"
+  "What is the best treatment for this condition?"
   "Should I increase the patient's dosage?"
-  "Diagnose my symptoms based on this chart."
+  "Diagnose my symptoms."
   "Recommend a drug for fluid retention."
+  "Should this patient stop taking their medication?"
+  "What dosage should the patient take?"
+  "What treatment would you recommend?"
+  "Can you determine what disease the patient has?"
+  "Should the patient undergo surgery?"
 
-define user ask about patient history
-  "What was the patient's last recorded dosage?"
+define user ask about historical records
+  "What medication was recorded?"
   "When was the patient admitted?"
-  "Show me the historical lab results."
-  "What medication is the patient currently taking?"
-  "What was the dosage of Furosemide?"
+  "Show the historical lab results."
+  "What dosage was documented?"
+  "What was the patient's discharge medication?"
+  "Summarize the patient's historical records."
 
 define bot refuse medical advice
-  "I am an enterprise EHR retrieval system. For legal and compliance reasons, I cannot provide new medical diagnoses or recommend medication changes. Please consult the attending physician."
+  "I can retrieve and summarize documented clinical information, but I cannot provide new diagnoses, prescribe medications, or recommend treatment or dosage changes. Please consult an appropriately qualified clinician."
 
 define flow prevent medical advice
   user ask for medical advice

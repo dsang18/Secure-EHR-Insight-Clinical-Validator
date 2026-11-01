@@ -24,7 +24,7 @@ cymem==2.0.13
 dataclasses-json==0.6.7
 debugpy==1.8.22
 distro==1.9.0
-en_core_web_lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl#sha256=293e9547a655b25499198ab15a525b05b9407a75f10255e405e8c3854329ab63
+en_core_web_lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl
 executing==2.2.1
 fastapi==0.141.1
 fastembed==0.8.1
@@ -97,6 +97,7 @@ pydantic==2.13.5
 pydantic_core==2.46.5
 pydeck==0.9.3
 Pygments==2.21.0
+PyJWT==2.15.1
 python-dateutil==2.9.0.post0
 python-dotenv==1.2.3
 python-multipart==0.0.32

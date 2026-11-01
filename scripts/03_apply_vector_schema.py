@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 def apply_pgvector():
     load_dotenv()
     
-    db_url = f"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@{os.getenv('DB_HOST')}:{os.getenv('DB_PORT')}/{os.getenv('DB_NAME')}"
+    db_url = os.getenv("POSTGRES_URL")
     engine = create_engine(db_url)
     
     print("🚀 Connecting to AWS to apply pgvector schema upgrade...")

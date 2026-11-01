@@ -20,8 +20,8 @@ def ingest_data():
     if not csv_path.exists():
         raise FileNotFoundError(f"CRITICAL: Could not find dataset at {csv_path}")
         
-    db_url = f"postgresql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@{os.getenv('DB_HOST')}:{os.getenv('DB_PORT')}/{os.getenv('DB_NAME')}"
-    engine = create_engine(db_url)
+    db_url = os.getenv("POSTGRES_URL")
+    engine = create_engine(db_url, connect_args={"connect_timeout":10})
     
     print(f"Executing schema setup from:\n  {schema_path}")
     with engine.begin() as conn:

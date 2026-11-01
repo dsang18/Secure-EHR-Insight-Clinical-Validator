@@ -1,19 +1,40 @@
-# Virtual environment
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+secrets/
+
+# Python
 .venv/
-
-# VS Code settings
-.vscode/
-
-# Local/project data
-data/
-
-# Python cache
+venv/
 __pycache__/
 *.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
-# Private keys / certificates
-*.pem
+# IDE
+.vscode/
+.idea/
 
-.env
+# Notebooks
+.ipynb_checkpoints/
 
-Steps-To_Execute.md
+# Local datasets and model artifacts
+data/
+models/
+artifacts/
+*.pt
+*.pth
+*.onnx
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
